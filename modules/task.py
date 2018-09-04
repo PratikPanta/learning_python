@@ -13,7 +13,39 @@ Helloworld
 
 """
 
+class EvenString:
+
+    def __init__(self):
+        self.text = ""
+        self.output = ""
+    
+  
+    
+    def enter_text(self):
+        self.text = input('Enter the string...')
+
+        for i in self.text:
+            if (self.text.index(i) % 2 == 0):
+                self.output +=i 
+
+        return self.output
+    
+
+    
+    def print_output(self):
+        print("The resulted string is:", self.output)
 
 if __name__ == "__main__":
-    pass
+    es = EvenString()
+    es.enter_text()
+    es.print_output()
+
+       
+
+   
+    
+   
+    
+
+    
     
